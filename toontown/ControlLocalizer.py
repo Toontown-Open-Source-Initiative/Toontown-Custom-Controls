@@ -16,6 +16,11 @@ IceGameInstructions = 'Get as close to the center by the end of the second round
 
 # You should replace all instances of "arrow keys", "left and right keys", etc. with "movement keys" to keep everything consistent.
 # Replace specific hotkey names such as "Ctrl" with a special ID. This ID will be formatted using a function in the ControlManager.
+# In this instance, the ID is " $0004".
+# The $ is the indentifer. This is to let the game know to start formatting the rest of your ID right here.
+# The 4 numbers after that stand for category and hotkey ids. Ctrl is in the "Movement" category, which has the ID of 00.
+# Ctrl, or "Jump", has the ID 04. You can reference these IDs in ControlGlobals.py
+# Therefore, to format the jump key, you just replace, "Ctrl" with " $0004"
 # Typically, you can format the string like so:
 
 base.controlManager.convertHotkeyString(TTLocalizer.IceGameInstructionsNoTnt, '%')

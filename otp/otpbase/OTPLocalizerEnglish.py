@@ -82,7 +82,7 @@ HotkeyNames = {
           HotkeySync: 'Sync',
           HotkeyMarker: 'Marker'
           
-    }
+    },
     3:
     {
            HotkeyCameraForward: 'Move Camera Forward',
